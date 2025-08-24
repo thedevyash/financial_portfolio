@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
  * @param {Array} staticRows - [{ sector, name, purchasePrice, qty, symbol }]
  */
 export function usePortfolioData(staticRows, intervalMs = 15000) {
+
   const [liveMap, setLiveMap] = useState({}); // symbol -> cmp
   const [lastUpdated, setLastUpdated] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -17,6 +18,21 @@ export function usePortfolioData(staticRows, intervalMs = 15000) {
     Array.from(new Set(staticRows.map(r => r.symbol).filter(Boolean)));
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
   async function fetchLive() {
     setLoading(true);
     setErrorMsg("");
