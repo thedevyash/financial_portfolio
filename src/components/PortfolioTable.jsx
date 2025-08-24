@@ -2,7 +2,7 @@
 import React, { useMemo } from "react";
 import { PortfolioHeader } from "../components/portfolio/PortfolioHeader";
 import { MobileView } from "../components/portfolio/MobileView";
-import { DesktopTable } from "../components/portfolio/DesktopView";
+import { DesktopView } from "../components/portfolio/DesktopView";
 
 function formatNumber(n) {
   if (n == null) return "—";
@@ -49,14 +49,14 @@ function TableInner({ rows, lastUpdated, loading }) {
   
   
   return (
-    <div className="rounded-2xl bg-white shadow ring-1 ring-black/5 overflow-hidden">
+    <div className="rounded-2xl shadow ring-1 ring-black/5 overflow-hidden">
       <PortfolioHeader loading={loading} lastUpdated={lastUpdated} />
       <MobileView 
         bySector={bySector} 
         totalInvestment={totalInvestment} 
         totalPV={totalPV} 
       />
-      <DesktopTable 
+      <DesktopView
         bySector={bySector} 
         totalInvestment={totalInvestment} 
         totalPV={totalPV} 
