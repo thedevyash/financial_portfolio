@@ -11,7 +11,7 @@ export function MobileView({ bySector, totalInvestment, totalPV }) {
 
         return (
           <div key={sector} className="border-b border-slate-700/30 last:border-b-0">
-            {/* Premium Sector Header */}
+            {/* Sector Header */}
             <div className="bg-gradient-to-r from-slate-800/70 via-slate-700/50 to-slate-800/70 backdrop-blur-sm px-6 py-5">
               <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-3">
@@ -32,7 +32,7 @@ export function MobileView({ bySector, totalInvestment, totalPV }) {
               </div>
             </div>
 
-            {/* Premium Stock Cards */}
+            {/* Stock Cards */}
             {items.map(item => (
               <div key={sector + item.name} className="px-6 py-6 border-b border-slate-800/30 last:border-b-0 bg-gradient-to-br from-slate-900/20 to-slate-800/10">
                 {/* Stock Header with Enhanced Styling */}
@@ -59,7 +59,7 @@ export function MobileView({ bySector, totalInvestment, totalPV }) {
                   </div>
                 </div>
 
-                {/* Premium Financial Grid */}
+                {/* Financial Grid */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-slate-800/40 backdrop-blur-sm p-4 rounded-xl border border-slate-700/30">
                     <span className="text-slate-400 text-xs block mb-2 font-semibold tracking-wider">PURCHASE PRICE</span>
@@ -93,7 +93,7 @@ export function MobileView({ bySector, totalInvestment, totalPV }) {
               </div>
             ))}
 
-            {/* Premium Sector Summary */}
+            {/* Sector Summary */}
             <div className="bg-gradient-to-r from-slate-800/60 to-slate-700/40 backdrop-blur-sm px-6 py-5">
               <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-3">
@@ -114,7 +114,7 @@ export function MobileView({ bySector, totalInvestment, totalPV }) {
         );
       })}
 
-      {/* Premium Portfolio Summary */}
+      {/* Portfolio Summary */}
       <div className="bg-gradient-to-br from-slate-900/95 via-slate-800/85 to-slate-900/95 backdrop-blur-xl px-8 py-8">
         <div className="text-center">
           {/* Header with animated indicator */}

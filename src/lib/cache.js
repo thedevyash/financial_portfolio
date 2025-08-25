@@ -1,4 +1,4 @@
-// src/lib/cache.js
+
 const STORE = new Map();    // key -> { t, v }
 const INFLIGHT = new Map(); // key -> Promise
 

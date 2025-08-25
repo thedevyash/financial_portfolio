@@ -1,4 +1,4 @@
-// src/app/api/quotes/all/route.js
+
 export const runtime = "nodejs";
 
 import { NextResponse } from "next/server";
@@ -14,8 +14,6 @@ export async function GET() {
 
     const payload = await memo(key, async () => {
       const quotes = await fetchYahooQuotesBatched(symbols, 20, 3);
-
-      // DATA TRANSFORMATION: raw -> thin DTO for the table
       const data = symbols.map((sym) => {
         const q = quotes[sym];
         return {

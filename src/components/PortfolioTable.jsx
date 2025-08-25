@@ -4,10 +4,10 @@ import { PortfolioHeader } from "../components/portfolio/PortfolioHeader";
 import { MobileView } from "../components/portfolio/MobileView";
 import { DesktopView } from "../components/portfolio/DesktopView";
 
-function formatNumber(n) {
-  if (n == null) return "—";
-  return n.toLocaleString("en-IN", { maximumFractionDigits: 2 });
-}
+// function formatNumber(n) {
+//   if (n == null) return "—";
+//   return n.toLocaleString("en-IN", { maximumFractionDigits: 2 });
+// }
 
 /**
  * props.rows => array of:

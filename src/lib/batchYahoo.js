@@ -1,14 +1,14 @@
-// src/lib/batchYahoo.js
+
 import yahooFinance from "yahoo-finance2";
 
-function chunk(arr, n = 20) {
+function chunk(arr, n = 11) {
   const out = [];
   for (let i = 0; i < arr.length; i += n) out.push(arr.slice(i, i + n));
   return out;
 }
 
 /**
- * Fetch quotes in batches (20) with limited parallelism for safety.
+ * Fetch quotes in batches (11) with limited parallelism for safety.
  * Shows async/await + Promise.all for parallel batch calls.
  */
 export async function fetchYahooQuotesBatched(symbols, batchSize = 11, parallelBatches = 3) {
@@ -33,13 +33,7 @@ export async function fetchYahooQuotesBatched(symbols, batchSize = 11, parallelB
       })
     );
 
-    // Optional: collect/log errors from settled
-    settled.forEach((s, idx) => {
-      if (s.status === "rejected") {
-        console.error("Batch failed:", i + idx, s.reason?.message || s.reason);
-      }
-    });
   }
 
-  return results; // map: symbol -> raw quote
+  return results;
 }

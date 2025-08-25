@@ -1,4 +1,3 @@
-// src/components/ErrorBanner.jsx
 "use client";
 export default function ErrorBanner({ message }) {
   if (!message) return null;

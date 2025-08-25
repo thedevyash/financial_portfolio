@@ -12,7 +12,7 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-6 sm:p-8">
       <div className="mx-auto max-w-7xl space-y-10">
         
-        {/* Premium Hero Section */}
+        {/* Hero Section */}
         <header className="relative overflow-hidden bg-gradient-to-r from-slate-900/95 via-slate-800/85 to-slate-900/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-slate-700/50">
           {/* Subtle top border glow */}
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/50 to-transparent"></div>
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
         </header>
 
-        {/* Error Banner with Premium Styling */}
+        {/* Error Banner */}
         {errorMsg && (
           <div className="relative overflow-hidden bg-gradient-to-r from-red-950/95 via-red-900/85 to-red-950/95 backdrop-blur-xl rounded-2xl border border-red-800/50 shadow-2xl shadow-red-900/20">
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-400/50 to-transparent"></div>
@@ -58,20 +58,19 @@ export default function Home() {
           </div>
         )}
 
-        {/* Portfolio Table with Enhanced Wrapper */}
+        {/* Portfolio Table */}
         <div className="relative">
-          {/* Background decoration */}
           <div className="absolute -inset-3 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-emerald-600/10 rounded-[2rem] blur-2xl opacity-50"></div>
           <div className="relative">
             <PortfolioTable rows={rows} lastUpdated={lastUpdated} loading={loading} />
           </div>
         </div>
 
-        {/* Premium Footer */}
+        {/*Footer */}
         <footer className="text-center py-12">
           <div className="space-y-4">
             <div className="text-slate-600 text-sm">
-              Made with ❤️ by Yash Sharma
+              Made by Yash Sharma
             </div>
           </div>
         </footer>

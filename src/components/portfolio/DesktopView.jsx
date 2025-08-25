@@ -6,7 +6,7 @@ export function DesktopView({ bySector, totalInvestment, totalPV }) {
     <div className="hidden lg:block">
       <div className="overflow-x-auto">
         <table className="border-collapse w-full" style={{ minWidth: '1200px' }}>
-          {/* Premium Table Header */}
+          {/* Table Header */}
           <thead className="bg-gradient-to-r from-slate-900/95 via-slate-800/85 to-slate-900/95 backdrop-blur-xl">
             <tr className="border-b border-slate-700/50">
               <th className="px-4 py-5 text-left font-bold text-slate-200 tracking-wider text-xs uppercase" style={{ width: '180px' }}>
