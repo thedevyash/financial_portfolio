@@ -2,6 +2,7 @@
 
 import holdings from "@/data/holdings.json";
 import PortfolioTable from "@/components/PortfolioTable";
+import ErrorBanner from "@/components/ErrorBanner";
 import { usePortfolioData } from "@/hooks/usePortfolioData";
 
 export default function Home() {
