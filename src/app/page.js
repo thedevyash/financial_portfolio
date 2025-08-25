@@ -2,7 +2,7 @@
 
 import holdings from "@/data/holdings.json";
 import PortfolioTable from "@/components/PortfolioTable";
-import ErrorBanner from "@/components/ErrorBanner";
+// import ErrorBanner from "@/components/ErrorBanner";
 import { usePortfolioData } from "@/hooks/usePortfolioData";
 
 export default function Home() {
@@ -71,7 +71,7 @@ export default function Home() {
         <footer className="text-center py-12">
           <div className="space-y-4">
             <div className="text-slate-600 text-sm">
-              Made with ❤️ Yash Sharma
+              Made with ❤️ by Yash Sharma
             </div>
           </div>
         </footer>
