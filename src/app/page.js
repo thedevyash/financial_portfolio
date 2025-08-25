@@ -70,7 +70,7 @@ export default function Home() {
         <footer className="text-center py-12">
           <div className="space-y-4">
             <div className="text-slate-600 text-sm">
-              Made by Yash Sharma
+              Made with ❤️ by Yash Sharma
             </div>
           </div>
         </footer>
